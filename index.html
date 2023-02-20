@@ -1,1 +1,262 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- This is your tab name, edit to what you prefer. -->
+    <title>Chirag Kandoi</title>
+  </head>
+  
+<!--  It is important to note any extra sections may be deleted if prefered. Be sure to test your code if you do so.  -->
+<!-- IMPORTANT: Don't forget to include the JS code in this template's directory. -->
+  
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        
+        <!-- replace the href link to a site of your own and update the 'RS.' to your initials -->
+        <a href="https://chiragK22.github.io/chiragkandoi" class="link"
+          >CK.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            
+            <!-- This is your nav bar. Update with disired tab names (between the >...< tags). -->
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      
+<!-- ABOUT SECTION -->
+      <div class="about center">
+        
+        <!--  Replace Raj Shekhar with your name.  -->
+        <h1>Hi, I am <span class="about__name">Chirag Kandoi.</span></h1>
+        
+        <!--  Replace 'A Front end Developer' with your title.  -->
+        <h2 class="about__role">A Game Developer.</h2>
+        
+        <!--  Replace this paragraph with your bio/about information.  -->
+        <p class="about__desc">
+          I am a second-year master's student in computer science at Colorado State University.
+          My research interests include machine learning, game development, virtual reality, and augmented reality. 
+          My advisor is Prof <a href="https://sites.google.com/view/nathanieltblanchard/home">Nate Blanchard</a>
+        </p>
+
+        <div class="about__contact center">
+          
+          <!-- This is the link to your resme. Update the href to your resume, or delete the a tag content. -->
+          <a href="https://drive.google.com/file/d/1MqrF5irsRKDxVJfP0LnQI-HoN_jyYEqf/view">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <!--  replace the href link with the link to your GitHub profile  -->
+          <a
+            href="https://github.com/chiragK22"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <!--  replace the href link with the link to your LinkedIn profile  -->
+          <a
+            href="https://www.linkedin.com/in/chirag-kandoi-24ab19169"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+<!--  END ABOUT SECTION  -->
+
+<!-- PROJECTS SECTION -->
+<!--  This section is for your projects, update the filler information with your PROJECTS.  -->
+<!--  Delete any extra a sections as necessary.  -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>ROW</h3>
+            <p class="project__description">
+              Created an open-world shooter game, with a focus on team strategy and decision-based rewards. Implemented first-person 
+              and third-person game modes which enhanced the overall gameplay experience.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">C-Sharp</li>
+              <li class="project__stack-item">Blender 3D</li>
+              <li class="project__stack-item">Unity 3D</li>
+            </ul>
+
+            <a
+              href="https://gitlab.com/ChiragKandoi22/row"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/144KCJqNLG6hBJb5_8ICdlnsWWhc085rT/view"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Micro-Gesture Dataset</h3>
+            <p class="project__description">
+              Research on Micro-Gestures, to create a new dataset for real-time human interaction in virtual reality. Design an 
+              environment for human subjects to collect real-world data and created synthetic data for training.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">C-Sharp</li>
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Unity 3D</li>
+            </ul>
+
+            <a
+              href="https://github.com/Blanchard-lab/Micro-Gesture-Dataset"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://github.com/Blanchard-lab/Micro-Gesture-Dataset"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Greenify: The Garden App</h3>
+            <p class="project__description">
+              Developed an android app that helps the people who visit the nearby garden and tool, shop owners, where
+              people can buy plants, tools and give their valuable suggestions.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JAVA</li>
+              <li class="project__stack-item">Kotlin</li>
+              <li class="project__stack-item">Android Studio</li>
+            </ul>
+
+            <a
+              href="https://github.com/ChiragK22/GreenifyTheGardendApp"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://github.com/ChiragK22/GreenifyTheGardendApp"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+<!-- END PROJECTS SECTION -->
+
+<!-- SKILLS SECTION -->
+<!--  This section is for your skills, update the filler information with your SKILLS.  -->
+<!--  Delete any extra li sections as necessary.  -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">C#</li>
+          <li class="skills__list-item btn btn--plain">Unity 3D</li>
+          <li class="skills__list-item btn btn--plain">Blender 3D</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">C</li>
+          <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">PHP</li>
+        </ul>
+      </section>
+<!-- END SKILLS SECTION -->
+      
+<!-- CONTACT SECION -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:chiragkandoi81@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+<!-- END CONTACT SECTION -->
+      
+    </main>
+<!-- END MAIN CONTENT -->
+
+<!-- FOOTER -->
+    <!--  This section is a footer. Update 'Created by ...' (between the >...< tags).  -->
+    <!--  replace the href link to your own gitHub or other site  -->
+    <!--  You can also delete the footer if prefered. (Be sure to test your code changes)  -->
+    <footer class="footer">
+      <a
+        href="https://github.com/chiragK22/chiragkandoi"
+        class="link footer__link"
+      >
+        Created By Chirag Kandoi
+      </a>
+    </footer>
+<!-- END FOOTER -->
+
+    <!--  This div is for an error to appear if you scroll down, to take you back to the top of the page.  -->
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
